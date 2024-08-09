@@ -4,6 +4,10 @@
 
 export const users = [
   {
+    address: 'EFhW3BjZsfmCMcPUAvjx1qSAkedLe9HJwXEKhLHk9aS9',
+    key: '0x85295347c95055bc572a28d6b355685c84def7f8b3ad9abe15a107fd44b0824e'
+  },
+  {
     address: 'AmKiPizdmsQ8CPnYwFpaJ121fNAT6wXesxxBpBHGGFXs',
     key: '0xd50cdd90fb8953d4f626ee8075e9c0bd3d22dfbe581fd3055a90b5fb0ce6d4ef'
   },

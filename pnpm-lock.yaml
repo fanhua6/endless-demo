@@ -17,6 +17,9 @@ dependencies:
   '@emotion/styled':
     specifier: ^11.11.5
     version: 11.11.5(@emotion/react@11.11.4)(@types/react@18.3.3)(react@18.3.1)
+  dayjs:
+    specifier: ^1.11.12
+    version: 1.11.12
   endless-ts-sdk:
     specifier: ^0.1.12
     version: 0.1.12
@@ -2596,6 +2599,10 @@ packages:
 
   /date-fns@3.6.0:
     resolution: {integrity: sha512-fRHTG8g/Gif+kSh50gaGEdToemgfj74aRX3swtiouboip5JDLAyDE9F11nHMIcvOaXeOC6D7SpNhi7uFyB7Uww==}
+    dev: false
+
+  /dayjs@1.11.12:
+    resolution: {integrity: sha512-Rt2g+nTbLlDWZTwwrIXjy9MeiZmSDI375FvZs72ngxx8PDC6YXOeR3q5LAuPzjZQxhiWdRKac7RKV+YyQYfYIg==}
     dev: false
 
   /debug@4.3.5:

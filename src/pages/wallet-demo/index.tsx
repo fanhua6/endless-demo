@@ -11,6 +11,8 @@ import {
   TypeTagAddress,
   TypeTagU64,
   AccountAddress,
+  EndlessConfig,
+  Endless
 } from 'endless-ts-sdk'
 
 import { 
@@ -24,6 +26,11 @@ const jssdk = new EndlessJsSdk({
   network: Network.TESTNET
 })
 
+const config = new EndlessConfig({
+  network: Network.TESTNET,
+})
+
+const endless = new Endless(config)
 
 const WalletH5Demo = () => {
   const [ accountAddress, setAccountAddress ] = useState('')
@@ -115,6 +122,14 @@ const WalletH5Demo = () => {
     }
   }
 
+  const getAccountEDSBalanceHandler = async () => {
+    if(accountAddress) {
+      console.log(accountAddress)
+      const accountEDSBalance = await endless.getAccountInfo({ accountAddress: accountAddress })
+      console.log('accountEDSBalance', accountEDSBalance)
+    }
+  }
+
   useEffect(() => {
     jssdk.onAccountChange((accountAddress) => {
       console.log('onAccountChange', accountAddress)
@@ -152,6 +167,9 @@ const WalletH5Demo = () => {
         </Button>
         <Button onClick={ () => jssdk.open() }>
           open
+        </Button>
+        <Button onClick={ getAccountEDSBalanceHandler }>
+          getAccountEDSBalance
         </Button>
       </HStack>
 

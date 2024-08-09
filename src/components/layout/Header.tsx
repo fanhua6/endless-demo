@@ -31,8 +31,8 @@ const Header = () => {
         <a href="/test_shuffler">
           <Button>Test shuffler</Button>
         </a>
-        <a href="/red-envelope">
-          <Button>Red Envelope</Button>
+        <a href="/lucky_box">
+          <Button>Lucky Box</Button>
         </a>
       </HStack>
     </Box>

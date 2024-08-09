@@ -18,7 +18,7 @@ const WalletRoutes = () => {
         <Route path="/my_wallet" element={<MyWallet />} />
         <Route path="/test_shuffler" element={<TestShuffle />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/red-envelope" element={<RedEnvelope />} />
+        <Route path="/lucky_box" element={<RedEnvelope />} />
       </Routes>
     </WalletLayout>
   )

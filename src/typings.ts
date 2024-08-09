@@ -1,5 +1,5 @@
 
-export type User = {
+export type IUser = {
   address: string;
-  key: string;
+  key: string | null;
 }
